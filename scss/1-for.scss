@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .size {
+        padding: 20px;
+    }
+}
+
+
+// for every nummber from 1 through 10, the elemet with class size-n should have a font-size of 10px
+//@for $var from 1 through 10
+@for $var from 1 to 11 {
+    .size-#{$var} {
+        font-size: 10px * $var;
+    }
+}
